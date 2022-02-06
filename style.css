@@ -7,28 +7,9 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  .test{
-      position:fixed;
-      top:50%;
-      left:50%;
-      z-index: 500;
-      width: 100px;
-      height: 100px;
-      background-color:red;
+  
 
-  }
-
-  .test::before{
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f007";
-  }
-
-  h3::before{
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f007";
-  }
+  
 
 
 .container{
@@ -53,11 +34,36 @@
     
 }
 
+.sideBar h1::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+    display: inline-block;
+    position: relative;
+    right:5px;
+}
+
+.sideBar li::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+    display: inline-block;
+    position: relative;
+    right:5px;
+
+}
+
+.sideBar h1{
+    padding-left:30px;
+}
+
 .sideBar ul{
     padding: 30px;
 }
 
-
+.sideBar li{
+    margin-top:10px;
+}
 
 
 .sideBar 
@@ -66,6 +72,8 @@ li{
     list-style-type: none;
     color:white;
     font-size: 1rem;
+    position:relative;
+
 }
 
 
@@ -74,4 +82,59 @@ li{
     grid-row:1/2;
     grid-column: 2/3;
     background-color: gray;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+    
+    
+}
+
+.headerTop{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding-right:20px;
+}
+
+
+
+#searchBar{
+ width:50%;
+ border-radius:8px;
+ margin-left:-80px;
+}
+
+
+
+#avatar{
+    height:50px;
+    width:auto;
+    border-radius:50px;
+    margin-left:-70px;
+}
+
+#avatar2{
+    height:70px;
+    width:auto;
+    border-radius:50px;
+
+}
+
+
+.headerBottom{
+    display:flex;
+    gap:57%;
+    justify-content: space-around;
+    
+}
+
+.headerBottomFirst{
+    display:flex;
+    align-items:center;
+}
+
+#buttons{
+    padding:0;
+    display:flex;
+    gap:10%;
+    align-items:center;
 }

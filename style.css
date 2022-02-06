@@ -83,24 +83,15 @@ li{
     grid-column: 2/3;
     background-color: gray;
     display: grid;
-    grid-template-rows: 0.5fr 2fr;
+    grid-template-rows: 1fr 2fr;
     
     
 }
 
 .headerTop{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   padding-right:20px;
-}
-
-
-
-#searchBar{
- width:50%;
- border-radius:8px;
- margin-left:-80px;
+    display:grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
 }
 
 
@@ -108,33 +99,9 @@ li{
 #avatar{
     height:50px;
     width:auto;
-    border-radius:50px;
-    margin-left:-70px;
 }
 
 #avatar2{
-    height:70px;
+    height:50px;
     width:auto;
-    border-radius:50px;
-
-}
-
-
-.headerBottom{
-    display:flex;
-    gap:57%;
-    justify-content: space-around;
-    
-}
-
-.headerBottomFirst{
-    display:flex;
-    align-items:center;
-}
-
-#buttons{
-    padding:0;
-    display:flex;
-    gap:10%;
-    align-items:center;
 }

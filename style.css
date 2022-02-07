@@ -7,8 +7,13 @@
     -webkit-font-smoothing: antialiased;
   }
 
+  ul{
+      padding:0px;
+  }
   
-
+  li{
+      padding:0px;
+  }
   
 
 
@@ -83,25 +88,60 @@ li{
     grid-column: 2/3;
     background-color: gray;
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Q1 Q2"
+                         "Q3  Q4" ;
     
     
 }
 
-.headerTop{
-    display:grid;
-    grid-template-rows: 1fr 2fr;
-    grid-template-columns: 0.5fr 3fr 1fr 1fr 1fr;
+
+#hT1{
+    display:flex;
     align-items: center;
-    
+    gap:15px;
+    padding-left:30px;
+    grid-area: Q1;
 }
 
+#hT2{
+    display:flex;
+    align-items: center;
+    gap:25px;
+    grid-area: Q2;
+}
+
+#hT3{
+    display:flex;
+    align-items: center;
+    padding-left:30px;
+    gap:15px;
+    grid-area: Q3;
+}
+
+#hT4{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:30px;
+    grid-area: Q4;
+}
+
+#searchBar{
+    width:80%;
+}
 
 
 #avatar{
     height:50px;
     width:auto;
 }
+
+
+
+
+
 
 #avatar2{
     height:50px;

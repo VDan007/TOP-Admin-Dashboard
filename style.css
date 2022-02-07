@@ -147,3 +147,45 @@ li{
     height:50px;
     width:auto;
 }
+
+.article{
+    display:grid;
+    grid-template-rows: 1fr 10fr;
+    grid-auto-columns: 3.5fr 1fr;
+    grid-template-areas: 
+    'title side'
+    'main  side';
+}
+
+.title{
+    background-color: greenyellow;
+    grid-area: title;
+}
+.main{
+    background-color: red;
+    grid-area: main;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns:  1fr 1fr;
+    gap: 5px;
+}
+
+.mainArticle{
+    width:90%;
+    height:90%;
+    background-color:green;
+}
+
+.side{
+    background-color: yellow;
+    grid-area: side;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.sideArticle{
+    width:80%;
+    height: 60%;
+    background-color:pink;
+}
